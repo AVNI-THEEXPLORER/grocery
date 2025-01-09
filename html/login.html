@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Grocery Store</title>
+  <link rel="stylesheet" href="/CSS/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to Fresh Groceries!!!!!!</h1>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <!-- User Role Selection -->
+      <label for="role">Login as:</label>
+      <select id="role" name="role" required>
+        <option value="customer">Customer</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <!-- Email Input -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <!-- Additional Links -->
+    <div class="links">
+      <a href="/html/register.html">Create an Account</a>
+      <a href="/html/forgot-password.html">Forgot Password?</a>
+    </div>
+  </div>
+</body>
+</html>

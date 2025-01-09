@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Grocery Store</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="/CSS/register.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to Fresh Groceries</h1>
+    <h2>Register</h2>
+    <form action="/register" method="POST">
+      <!-- User Role Selection -->
+      <label for="role">Register as:</label>
+      <select id="role" name="role" required>
+        <option value="customer">Customer</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <!-- Full Name Input -->
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+      </div>
+
+      <!-- Confirm Password Input -->
+      <div class="input-group">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Register</button>
+    </form>
+
+    <!-- Additional Links -->
+    <div class="links">
+      <a href="/html/login.html">Already have an account? Login</a>
+    </div>
+  </div>
+</body>
+</html>
